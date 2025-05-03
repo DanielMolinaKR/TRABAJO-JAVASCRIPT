@@ -1,0 +1,327 @@
+/* Estilos de la pagina principal */
+#AsistenteDiario {
+    color: rgb(88, 138, 135);
+    border: 3px solid rgb(88, 138, 135);
+    margin-left: 135px;
+    margin-right: 135px;
+    margin-top: 20px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-color: rgb(182, 198, 190);
+    text-align: center;
+}
+
+.cuerpoGeneral {
+    background-color: rgb(223, 217, 202);
+    text-align: center;
+}
+
+.DescripcionAsistente {
+    color: rgb(238, 169, 149);
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.DescripcionMiAsistente {
+    margin-top: 30px;
+    padding: 15px;
+    color: #123458;
+}
+
+.DescripcionMiAsistente1 {
+    margin-bottom: 30px;
+    padding: 15px;
+    color: #123458;
+}
+
+.BarraDeNavegacion {
+    color: rgb(88, 138, 135);
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.AccesoAAplicacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+
+}
+
+.ItemAplicacion {
+    margin-top: 20px;
+    color: #123458;
+    border: 4px solid #5A6E60;
+    background-color: #c6d8ff;
+    border-radius: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.AccesoDirecto {
+    color: #5A6E60;
+}
+
+.pieDePagina {
+    color: #123458;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+@media (max-width: 768px) {
+    #AsistenteDiario {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1rem;
+    }
+
+    .ItemAplicacion {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .DescripcionAsistente,
+    .DescripcionMiAsistente,
+    .DescripcionMiAsistente1 {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .AccesoAAplicacion {
+        grid-template-columns: 1fr;
+    }
+
+    .BarraDeNavegacion {
+        font-size: 1rem;
+    }
+}
+
+/* ///////////////////////////////////////////// */
+
+/* Estilos de calculadora */
+.cuerpoCalculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background: rgb(223, 217, 202);
+    margin-bottom: 50px;
+}
+
+.calculadora {
+    background: #969292;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgba(15, 15, 15, 0.671);
+    width: 350px;
+}
+
+.display {
+    background: #222;
+    color: rgb(187, 255, 0);
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow-x: auto;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.boton {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    background: #e6e3e3;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: #7bebeb;
+}
+
+.igual {
+    grid-row: span 2;
+    background: #4caf50;
+    color: white;
+}
+
+.igual:hover {
+    background: #7bebeb;
+}
+
+.cero {
+    grid-column: span 2;
+}
+
+@media (max-width: 480px) {
+    .cuerpoCalculadora {
+        height: auto;
+        padding: 20px 10px;
+        background-color: #c6d8ff;
+    }
+
+    .calculadora {
+        width: 100%;
+        max-width: 320px;
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .display {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .boton {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .botones {
+        gap: 8px;
+    }
+}
+
+.footer-mi-aplicacion{
+    text-align: center;
+    padding: 10px;
+    background-color: #7bebeb;
+    font-size: 14px;
+    color: #555;
+    margin-top: 30px;
+}
+
+/* //////////////////////////////////////////// */
+/* Estilos para la lista de compras*/
+
+.contenedorListaCompras {
+    background-color: rgb(182, 198, 190);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-left: 30vh;
+}
+
+.tituloListaCompras {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a237e;
+    font-size: 1.8rem;
+}
+
+.InputAgregarCompra {
+    padding: 6px 50px;
+    font-size: 1rem;
+    border: 1px solid #6bc9ee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.botonAgregarCompra {
+    padding: 12px 20px;
+    background-color: #3949ab;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.botonAgregarCompra:hover {
+    background-color: #283593;
+}
+
+.listaCompra {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    color: #283593;
+}
+
+.listaCompra li {
+    background-color: rgb(140, 222, 236);
+    margin-bottom: 12px;
+    padding: 1px 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: background-color 0.3s ease;
+}
+
+.listaCompra li.completado {
+    background-color: rgb(159, 226, 97);
+    color: #555;
+    text-decoration: line-through;
+}
+
+.opciones button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: transform 0.1s ease, color 0.2s ease;
+    color: #7848af;
+}
+
+.opciones button:hover {
+    transform: scale(1.2);
+    color: #1a237e;
+}
+
+.editar-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    background-color: black;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contenedorListaCompras {
+        padding: 20px;
+        margin-left: 0;
+        margin-bottom: 20px;
+        background-color: #c6d8ff;
+    }
+
+    .InputAgregarCompra {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .botonAgregarCompra {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .opciones {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
